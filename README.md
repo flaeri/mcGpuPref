@@ -2,6 +2,18 @@
 Powershell Scipts To Auto Add Minecraft Java Executables To Gpu Preferences, and set them to run on the "high performance" GPU.
 
 ## How to
+
+### Shortcut
+
+**This may require PowerShell v3+ and .net4+ due to TLS1.2.**
+
+1. Start "powershell" (search for it in the start menu)
+2. Copy the next line, and paste it into the powershell window 
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force;iex(iwr 'https://raw.githubusercontent.com/flaeri/mcGpuPref/main/AddJavawPath.ps1')
+```
+
+### Normal Method
 1. Close any and all of your Minecraft windows
 2. Download the latest release (zip): https://github.com/flaeri/mcGpuPref/releases
 3. Unzip all the files anywhere you would like.
