@@ -3,7 +3,10 @@ Powershell Scipts To Auto Add Minecraft Java Executables To Gpu Preferences, and
 
 ## How to
 
-### Shortcut
+You can choose between the shortcut/oneliner (1st one), or the normal method (2nd option).
+Choose *either* you do not need to do both. They do the same thing, just different methods.
+
+### 1. Shortcut
 
 **This may require PowerShell v3+ and .net4+ due to TLS1.2.**
 
@@ -13,7 +16,7 @@ Powershell Scipts To Auto Add Minecraft Java Executables To Gpu Preferences, and
 Set-ExecutionPolicy Bypass -Scope Process -Force;iex(iwr 'https://raw.githubusercontent.com/flaeri/mcGpuPref/main/AddJavawPath.ps1')
 ```
 
-### Normal Method
+### 2. Normal Method
 1. Close any and all of your Minecraft windows
 2. Download the latest release (zip): https://github.com/flaeri/mcGpuPref/releases
 3. Unzip all the files anywhere you would like.
