@@ -41,7 +41,7 @@ It will create a folder called "backup" next to the script, and produce a backup
 ## What launchers/MC software are supported?
 
 * Stock / standard / default Launcher (C:\Program Files (x86)\Minecraft Launcher\runtime\jre-x64\bin\javaw.exe)
-* Lunar (<userprofile>\.lunarclient\jre\zulu8.50.0.53-ca-fx-jre8.0.275-win_x64\bin\javaw.exe)
+* Lunar (%userprofile%\.lunarclient\jre\zulu8.50.0.53-ca-fx-jre8.0.275-win_x64\bin\javaw.exe)
 * Bad Lion (C:\ProgramData\BadlionClient\jre1.8.0_202\bin\javaw.exe)
 * TLauncher (C:\Program Files\Java\jre1.8.0_281\bin\javaw.exe)
 * Forge (C:\Program Files (x86)\Minecraft Launcher\runtime\jre-legacy\windows-x64\jre-legacy\bin\javaw.exe)
