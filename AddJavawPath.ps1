@@ -13,8 +13,9 @@ if (test-path ".\backup") {
     mkdir .\backup
 }
 
-$javaWPaths = @{    stock = 'C:\Program Files (x86)\Minecraft Launcher\runtime\jre-x64\bin\javaw.exe'; 
-                    lunar = '$env:USERPROFILE\.lunarclient\jre\zulu8.50.0.53-ca-fx-jre8.0.275-win_x64\bin\javaw.exe';
+$javaWPaths = @{	stock = 'C:\Program Files (x86)\Minecraft Launcher\runtime\java-runtime-alpha\windows-x64\java-runtime-alpha\bin\javaw.exe';
+			stock_leg = 'C:\Program Files (x86)\Minecraft Launcher\runtime\jre-legacy\windows-x64\jre-legacy\bin\javaw.exe'; 
+                    lunar = '$env:USERPROFILE\.lunarclient\jre\zulu16.30.15-ca-fx-jre16.0.1-win_x64\bin\javaw.exe';
                     bLion = 'C:\ProgramData\BadlionClient\jre1.8.0_202\bin\javaw.exe';
                     tLaunch = 'C:\Program Files\Java\jre1.8.0_281\bin\javaw.exe';
                     forge = 'C:\Program Files (x86)\Minecraft Launcher\runtime\jre-legacy\windows-x64\jre-legacy\bin\javaw.exe';

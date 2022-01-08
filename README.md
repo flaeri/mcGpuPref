@@ -2,6 +2,21 @@
 Powershell Scipts To Auto Add Minecraft Java Executables To Gpu Preferences, and set them to run on the "high performance" GPU.
 
 ## How to
+
+You can choose between the shortcut/oneliner (1st one), or the normal method (2nd option).
+Choose *either* you do not need to do both. They do the same thing, just different methods.
+
+### 1. Shortcut
+
+**This may require PowerShell v3+ and .net4+ due to TLS1.2.**
+
+1. Start "powershell" (search for it in the start menu)
+2. Copy the next line, and paste it into the powershell window 
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force;iex(iwr 'https://raw.githubusercontent.com/flaeri/mcGpuPref/main/AddJavawPath.ps1')
+```
+
+### 2. Normal Method
 1. Close any and all of your Minecraft windows
 2. Download the latest release (zip): https://github.com/flaeri/mcGpuPref/releases
 3. Unzip all the files anywhere you would like.
@@ -26,7 +41,7 @@ It will create a folder called "backup" next to the script, and produce a backup
 ## What launchers/MC software are supported?
 
 * Stock / standard / default Launcher (C:\Program Files (x86)\Minecraft Launcher\runtime\jre-x64\bin\javaw.exe)
-* Lunar (<userprofile>\.lunarclient\jre\zulu8.50.0.53-ca-fx-jre8.0.275-win_x64\bin\javaw.exe)
+* Lunar (%userprofile%\\.lunarclient\jre\zulu8.50.0.53-ca-fx-jre8.0.275-win_x64\bin\javaw.exe)
 * Bad Lion (C:\ProgramData\BadlionClient\jre1.8.0_202\bin\javaw.exe)
 * TLauncher (C:\Program Files\Java\jre1.8.0_281\bin\javaw.exe)
 * Forge (C:\Program Files (x86)\Minecraft Launcher\runtime\jre-legacy\windows-x64\jre-legacy\bin\javaw.exe)
