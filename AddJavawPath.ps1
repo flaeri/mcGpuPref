@@ -28,18 +28,18 @@ $mcSearchPaths = `
 #Stock and Forge
 "C:\Program Files (x86)\Minecraft Launcher\runtime", `
 #Badlion
-"C:\ProgramData\BadlionClient"
+"C:\ProgramData\BadlionClient", `
+#MsStore
+"$env:LOCALAPPDATA\Packages\Microsoft.4297127D64EC6_8wekyb3d8bbwe\LocalCache\Local\runtime"
 
 foreach ($item in $mcSearchPaths) {
+    write-host "-------------------------"
     Write-Host "Testing $item" -ForegroundColor Yellow
-    write-host "`n"
     if (test-path $item) {
         write-host "Found: $item" -ForegroundColor Green
-        write-host "`n"
         $javaWPath = (Get-ChildItem -Path $item -Filter javaw.exe -Recurse).fullname
         foreach ($path in $javaWPath) {
             write-host "Adding: $path" -ForegroundColor Green
-            write-host "`n"
             Set-ItemProperty -path HKCU:\SOFTWARE\Microsoft\DirectX\UserGpuPreferences -Name $path -Value "GpuPreference=2;"
             }
     }
